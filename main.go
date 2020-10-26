@@ -3,5 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello,World!?")
+	for _, r := range []rune("Hello,世界!?") {
+		fmt.Print(r, " ")
+		fmt.Println(string(r))
+	}
 }
